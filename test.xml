@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<?xml-model href="./test.dtd" type="application/xml-dtd"?> -->
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./test.xsd">
+    <produkt nr="1.1.121481">
+        <marke>MARS</marke>
+        <klasse>Schokoriegel</klasse>
+        <bezeichnung>Schokoriegel Mars</bezeichnung>
+        <beschreibung>1425g, verschiedene Sorten,
+            5 verschiedene Sorten in der Großpackung
+            Bounty, Mars, Milky Way, Snickers und Twix
+            Klassische Riegel im Kleinformat - Ideal zum Teilen und Snacken</beschreibung>
+        <angebot>
+            <gebinde>
+                <menge>17</menge>
+                <einheit>Riegel</einheit>
+                <preis>18,45</preis>
+            </gebinde>
+            <gebinde>
+                <menge>60</menge>
+                <einheit>Riegel</einheit>
+                <preis>49,99</preis>
+            </gebinde>
+        </angebot>
+        <bild src="1.1.121481.jpg"/>
+    </produkt>
+    <produkt nr="1.1.121345">
+        <marke>MARS</marke>
+        <klasse>Riegel</klasse>
+        <bezeichnung>Twix Schokoriegel Minis</bezeichnung>
+        <beschreibung>Schokoriegel Twix Minis
+            Zartschmelzendes Karamell auf knusprigem Keks
+            Klassische Riegel im Kleinformat - Ideal zum Teilen und Snacken
+            Umhüllt von zartschmelzender Milchschokolade</beschreibung>
+        <angebot>
+            <gebinde>
+                <menge>13</menge>
+                <einheit>Riegel</einheit>
+                <preis>4,27</preis>
+            </gebinde>
+            <gebinde>
+                <menge>1530</menge>
+                <einheit>Riegel</einheit>
+                <preis>34,95</preis>
+            </gebinde>
+        </angebot>
+        <bild src="1.1.121345.jpg"/>
+    </produkt>
+</root>
