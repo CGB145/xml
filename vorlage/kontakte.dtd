@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Definition des Elementes "root"-->
+<!ELEMENT root (kontakt)*>
+
+<!ELEMENT kontakt (name,vorname+,spitzname,anrede,titel,geburtstag,bild,firma?,adresse?,nummern, mailadresse*, webadresse*, messenger*,memo,ereignisse,gruppen)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT vorname (#PCDATA)>
+<!ELEMENT spitzname (#PCDATA)>
+<!ELEMENT anrede (#PCDATA)>
+<!ELEMENT titel (#PCDATA)>
+<!ELEMENT geburtstag (#PCDATA)>
+<!ELEMENT bild EMPTY>
+<!-- Def. des Attributes "quelle" Element "bild" -->
+<!ATTLIST bild 
+quelle CDATA #IMPLIED
+>
+<!ELEMENT firma (name,abteilung,position)>
+<!ATTLIST adresse art CDATA #IMPLIED>
+
+<!ELEMENT abteilung (#PCDATA)>
+<!ELEMENT position (#PCDATA)>
+<!ELEMENT adresse (strasse,plz,ort,region,staat)>
+
+<!ATTLIST adresse art CDATA #IMPLIED>
+
+<!ELEMENT strasse (#PCDATA)>
+<!ELEMENT plz (#PCDATA)>
+<!ELEMENT ort (#PCDATA)>
+<!ELEMENT region (#PCDATA)>
+<!ELEMENT staat (#PCDATA)>
+<!-- Def. von Nummern -->
+<!ELEMENT nummern (nummer+)>
+<!ELEMENT nummer (#PCDATA)>
+<!ATTLIST nummer 
+art CDATA #REQUIRED
+ton CDATA #IMPLIED
+>
+<!ELEMENT mailadresse (#PCDATA)>
+<!ATTLIST mailadresse art CDATA #IMPLIED>
+<!ELEMENT webadresse (#PCDATA)>
+<!ATTLIST webadresse art CDATA #IMPLIED>
+<!ELEMENT messenger (#PCDATA)>
+<!ELEMENT memo (notiz*)>
+<!ELEMENT notiz (#PCDATA)>
+<!ELEMENT ereignisse (ereignis*)>
+<!ELEMENT ereignis (datum,bezeichnung,notiz)>
+<!ELEMENT datum (#PCDATA)>
+<!ELEMENT bezeichnung (#PCDATA)>
+<!ELEMENT gruppen (gruppe*)>
+<!ELEMENT gruppe (#PCDATA)>
+<!-- Multiplikatoren 
+        min     max
+NULL    1       1
+?       0       1
++       1       unendlich
+*       0       unendlich
+-->

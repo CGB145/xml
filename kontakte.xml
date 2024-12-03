@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- <!DOCTYPE root SYSTEM "kontakte.dtd"> -->
+<!-- .xsd zeigt fehler zeilenweise an-->
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="./kontakte.xsd"> <!-- schema wird geladen. elemente benutzen aber kein :xsi in xsi:noNamespaceSchemaLocation kommt der pfad zur xsd datei rein -->
+	
+	<kontakt>
+
+		<anrede></anrede>
+		<titel></titel>
+		<name> Meier </name>
+		<vorname> Franziska </vorname>
+		<spitzname> Franzi </spitzname>
+		<geburtstag> 2001-10-01 </geburtstag>
+		<bild quelle="P1234567.jpg"/> 
+
+		<adresse>
+			<strasse> Tulpenweg 18 </strasse>
+			<plz> 84321 </plz>
+			<ort> Hinterhausen </ort>
+			<region> </region>
+			<staat> </staat>
+		</adresse>
+
+		<nummern> 
+			<nummer art="privat"> 0891234564 </nummer>
+			<nummer art="mobil" ton="Basic Bell"> 017623456789 </nummer>
+		</nummern>
+		
+		<mailadresse art="privat"> franzi@web.de </mailadresse>
+		<webadresse> </webadresse>
+		<messenger> </messenger>
+
+		<ereignisse>
+			<ereigniss>
+				<datum> 15.11 </datum>
+				<bezeichnung> treffen </bezeichnung>
+				<notiz> </notiz>
+			</ereigniss>
+		</ereignisse>
+
+		<gruppen>
+			<gruppe> Freunde </gruppe>
+		</gruppen>
+		
+	</kontakt>
+
+	<kontakt>
+
+		<anrede> Herr </anrede>
+		<titel></titel>
+		<name> Bayramoglu </name>
+		<vorname> Caglan </vorname>
+		<spitzname></spitzname>
+		<geburtstag></geburtstag>
+		<bild/> 
+
+		<firma> 
+			<name> </name>
+			<abteilung> </abteilung>
+			<position> </position>
+		</firma>	
+
+		<adresse>
+			<strasse> Rosenheimer Str.80 </strasse>
+			<plz> 81669 </plz>
+			<ort> München </ort>
+			<region> Bayern </region>
+			<staat> Deutschland </staat>
+		</adresse>
+
+		<nummern> 
+			<nummer art="privat"> 01727966864</nummer>
+		</nummern>
+		
+		<mailadresse art="privat"> b.caglan@outlook.com </mailadresse>
+		<webadresse art="privat"> cgb145.github.io </webadresse>
+		<messenger> </messenger>
+
+		<memo>
+			<notiz> ich </notiz>
+		</memo>
+
+		<ereignisse>
+			<ereigniss>
+				<datum> 26.10.2024 </datum>
+				<bezeichnung> Kursun </bezeichnung>
+				<notiz> Topumdan siksinlar </notiz>
+			</ereigniss>
+		</ereignisse>
+
+		<gruppen>
+			<gruppe> </gruppe>
+		</gruppen>
+		
+	</kontakt>
+
+	<kontakt>
+
+		<anrede> Herr </anrede>
+		<titel> Reis </titel>
+		<name> Bayramoglu </name>
+		<vorname> Recep </vorname>
+		<spitzname> Reco </spitzname>
+		<geburtstag> 1963-01-02 </geburtstag>
+		<bild/> 
+
+		<firma> 
+			<name> Siemens </name>
+			<abteilung> Liniensteuerung </abteilung>
+			<position> Abteilungs Leiter </position>
+		</firma>	
+
+		<adresse>
+			<strasse> Rosenheimer Str.80 </strasse>
+			<plz> 81669 </plz>
+			<ort> München </ort>
+			<region> Bayern </region>
+			<staat> Deutschland </staat>
+		</adresse>
+
+		<nummern art="firma"> 
+			<nummer> 089555555 </nummer>
+		</nummern>
+		
+		<mailadresse art="firma"> r.bayramoglu@siemens.de </mailadresse>
+		<webadresse> </webadresse>
+		<messenger> </messenger>
+
+		<memo>
+			<notiz> babu </notiz>
+		</memo>
+
+		<ereignisse>
+			<ereigniss>
+				<datum> 23.10.2024 </datum>
+				<bezeichnung> Sinir Krisi </bezeichnung>
+				<notiz> Karisi geliyo eyvah </notiz>
+			</ereigniss>
+		</ereignisse>
+
+		<gruppen>
+			<gruppe> Aile </gruppe>
+		</gruppen>
+		
+	</kontakt>
+
+
+</root>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<!ELEMENT root (produkt)*>
+	<!ELEMENT produkt (marke,klasse,bezeichnung,beschreibung, angebot, bild)*>
+	<!ATTLIST produkt nr CDATA #REQUIRED>
+
+	<!ELEMENT marke (#PCDATA)>
+	<!ELEMENT klasse (#PCDATA)>
+	<!ELEMENT bezeichnung (#PCDATA)>
+	<!ELEMENT beschreibung (#PCDATA)>
+
+	<!ELEMENT angebot (gebinde*)>
+	<!ELEMENT gebinde (menge,einheit,preis)*>
+	<!ELEMENT menge (#PCDATA)>
+	<!ELEMENT einheit (#PCDATA)>
+	<!ELEMENT preis (#PCDATA)>
+
+	<!ELEMENT bild EMPTY>
+	<!ATTLIST bild src CDATA #REQUIRED>

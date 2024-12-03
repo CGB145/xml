@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<element>
+
+<aahahaha attribut="deyse" alter="1">
+	
+	<birader/>
+	<renk> Evet </renk>
+	<konu> ya bu ne anlattiyor be, yok kural uyuldugunda 'wohlgeformt' veya 'well-formated'  mus </konu>
+
+</aahahaha>
+
+<aahahaha attribut="neyse" alter="2"> <!-- nur "" und net '' -->
+	
+	<birader/>
+	<renk> yok beh </renk>
+	<konu/>
+	
+</aahahaha>
+	<!-- Case Sensitive, Elemente normal bennen,  -->
+
+
+</element>

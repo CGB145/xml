@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<!ELEMENT root (kontakt*)>
+	
+	<!ELEMENT kontakt (anrede,titel,name, vorname,spitzname,geburtstag,bild,firma*,adresse,nummern,mailadresse,webadresse,messenger,memo*,ereignisse, gruppen)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT vorname (#PCDATA)>
+	<!ELEMENT titel (#PCDATA)>
+	<!ELEMENT anrede (#PCDATA)>
+	<!ELEMENT spitzname (#PCDATA)>
+	<!ELEMENT geburtstag (#PCDATA)>
+	<!ATTLIST geburtstag art CDATA #IMPLIED>
+	<!ELEMENT mailadresse (#PCDATA)>
+	<!ATTLIST mailadresse art CDATA #IMPLIED>
+	<!ELEMENT webadresse (#PCDATA)>
+	<!ATTLIST webadresse art CDATA #IMPLIED>
+	<!ELEMENT messenger (#PCDATA)>
+	<!ELEMENT bild EMPTY>
+	<!-- Def. des Attributes "quelle" Element Bild -->
+	<!ATTLIST bild quelle CDATA #IMPLIED >
+
+
+	<!ELEMENT firma (name,abteilung,position)>
+	<!ELEMENT abteilung (#PCDATA)>
+	<!ELEMENT position (#PCDATA)>
+
+	<!ELEMENT adresse (strasse,plz,ort,region,staat)>
+	<!ELEMENT strasse (#PCDATA)>
+	<!ELEMENT plz (#PCDATA)>
+	<!ELEMENT ort (#PCDATA)>
+	<!ELEMENT region (#PCDATA)>
+	<!ELEMENT staat (#PCDATA)>
+
+	<!ELEMENT nummern (nummer*)>
+	<!ATTLIST nummern art CDATA #IMPLIED>
+	<!ELEMENT nummer (#PCDATA)>
+	<!ATTLIST nummer art CDATA #IMPLIED>
+	<!ATTLIST nummer ton CDATA #IMPLIED>
+
+	<!ELEMENT memo (notiz)>
+	<!ELEMENT notiz (#PCDATA)>
+
+	<!ELEMENT ereignisse (ereigniss*)>
+	<!ELEMENT ereigniss (datum, bezeichnung, notiz)>
+	<!ELEMENT datum (#PCDATA)>
+	<!ELEMENT bezeichnung (#PCDATA)>
+
+	<!ELEMENT gruppen (gruppe)>
+	<!ELEMENT gruppe (#PCDATA)>
+
+
+
+
+
+
+
+
+
+	<!-- Multiplaktoren
+		min	max
+	NULL	1	1
+	? 	0 	1
+	+ 	1 	unendlich
+	* 	0 	unendlich
+
+
+
+	-->

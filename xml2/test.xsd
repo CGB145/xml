@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>  <!-- Prolog -->
+
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified"> 	
+
+
+	<xs:element name="root">
+
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="produkt" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="produkt">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="marke" type="xs:string"/>
+				<xs:element name="klasse" type="xs:string"/>
+				<xs:element name="bezeichnung" type="xs:string"/>
+				<xs:element name="beschreibung" type="xs:string"/>
+				<xs:element ref="angebot"/>
+				<xs:element ref="bild"/>
+			</xs:sequence>
+			<xs:attribute name="nr" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="angebot">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="gebinde" minOccurs="0" maxOccurs="2"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name=" gebinde">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="menge" type="xs:int"/>
+				<xs:element name="einheit" type="xs:string"/>
+				<xs:element name="preis" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+
+	</xs:element>
+
+	<xs:element name="bild">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="leer"> <!-- "leer" erfundener Datentyp|Referenztyp --> 
+					<xs:attribute name="src" type="xs:string" use="optional"/> <!-- "use" ob das attribut optional, notwendig oder verboten ist. ist nur bei attributen verwendbar-->
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	
+	<!-- Definition Datentyp leer -->
+	<xs:simpleType name="leer">
+		<xs:restriction base="xs:string">
+			<xs:length value="0"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+
+</xs:schema> 

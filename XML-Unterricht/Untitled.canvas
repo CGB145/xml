@@ -1,0 +1,35 @@
+{
+	"nodes":[
+		{"id":"50f9e7c537d5434d","x":-810,"y":-540,"width":2070,"height":670,"type":"group","label":"Untitled group"},
+		{"id":"9a33a8bd84297274","type":"text","text":"Themen","x":20,"y":-320,"width":250,"height":60},
+		{"id":"a9e758300fd77e54","type":"text","text":"Drucktechnik","x":355,"y":-520,"width":250,"height":60},
+		{"id":"5ed5d57fd8f2bf6a","type":"text","text":"Logo","x":50,"y":-520,"width":250,"height":60},
+		{"id":"671d65ba0e731a33","type":"text","text":"XML","x":-235,"y":-520,"width":250,"height":60},
+		{"id":"dfcaf6b19bd006d9","type":"text","text":"JS","x":-520,"y":-520,"width":250,"height":60},
+		{"id":"0a99d3204965ffbe","type":"text","text":"Typo","x":670,"y":-520,"width":250,"height":60},
+		{"id":"a5d79ca7605dce1c","type":"text","text":"Farblehre","x":990,"y":-520,"width":250,"height":60},
+		{"id":"07f58dada3969620","type":"text","text":"HTML/CSS","x":-790,"y":-520,"width":250,"height":60},
+		{"id":"5d85a8cbe7e3907e","x":-790,"y":-70,"width":250,"height":54,"type":"text","text":"Übungen"},
+		{"id":"ab306ad861911d2e","type":"text","text":"Log-In","x":-1520,"y":-260,"width":250,"height":60},
+		{"id":"12b0a4dea22f75e6","type":"text","text":"Home","x":-75,"y":-125,"width":250,"height":55},
+		{"id":"f3b5c9690f663c38","type":"text","text":"Notizen","x":670,"y":-16,"width":250,"height":60},
+		{"id":"59c3b8a7ab528d3b","x":795,"y":-260,"width":250,"height":60,"type":"text","text":"Konto"}
+	],
+	"edges":[
+		{"id":"0d6b6e7cc428335c","fromNode":"12b0a4dea22f75e6","fromSide":"bottom","toNode":"f3b5c9690f663c38","toSide":"bottom"},
+		{"id":"e6e96aa72624c79c","fromNode":"12b0a4dea22f75e6","fromSide":"top","toNode":"9a33a8bd84297274","toSide":"bottom"},
+		{"id":"2c2756e22df167bd","fromNode":"9a33a8bd84297274","fromSide":"top","toNode":"07f58dada3969620","toSide":"bottom"},
+		{"id":"fc6bb2430cd6e867","fromNode":"9a33a8bd84297274","fromSide":"top","toNode":"dfcaf6b19bd006d9","toSide":"bottom"},
+		{"id":"0c58477c8363c3a2","fromNode":"9a33a8bd84297274","fromSide":"top","toNode":"671d65ba0e731a33","toSide":"bottom"},
+		{"id":"f0c299ffd534260c","fromNode":"9a33a8bd84297274","fromSide":"top","toNode":"5ed5d57fd8f2bf6a","toSide":"bottom"},
+		{"id":"c0e52b45696e6ea7","fromNode":"9a33a8bd84297274","fromSide":"top","toNode":"a9e758300fd77e54","toSide":"bottom"},
+		{"id":"1662e47fdcbdbafa","fromNode":"9a33a8bd84297274","fromSide":"top","toNode":"0a99d3204965ffbe","toSide":"bottom"},
+		{"id":"5d9d304bc4a9704a","fromNode":"9a33a8bd84297274","fromSide":"top","toNode":"a5d79ca7605dce1c","toSide":"bottom"},
+		{"id":"5b757dc485ff5737","fromNode":"9a33a8bd84297274","fromSide":"bottom","toNode":"f3b5c9690f663c38","toSide":"top"},
+		{"id":"0e7e86545cbfe6de","fromNode":"12b0a4dea22f75e6","fromSide":"left","toNode":"5d85a8cbe7e3907e","toSide":"right"},
+		{"id":"a33f1a6ace90c867","fromNode":"5d85a8cbe7e3907e","fromSide":"top","toNode":"9a33a8bd84297274","toSide":"left"},
+		{"id":"991716406e83790d","fromNode":"5d85a8cbe7e3907e","fromSide":"bottom","toNode":"f3b5c9690f663c38","toSide":"left"},
+		{"id":"8ddb7ca9a1b545e6","fromNode":"ab306ad861911d2e","fromSide":"right","toNode":"50f9e7c537d5434d","toSide":"left"},
+		{"id":"0899c90a8e55ffe2","fromNode":"12b0a4dea22f75e6","fromSide":"right","toNode":"59c3b8a7ab528d3b","toSide":"left"}
+	]
+}

@@ -1,0 +1,42 @@
+Anrede
+Name
+Nachname
+Spitzanem
+Geburtstag
+Foto
+
+Firma
+Adresse
+Telfonnummer
+	Privat
+	Arbeit
+	Schule
+	Pager
+	Festnetz
+	Mobil
+	Andere
+Klingelton
+	Stanrdard
+	Basic Bell
+	Basic Telefonnummer
+	Calling You
+	Dance Party
+
+eMail-Adresse
+	Privat
+	Arbeit
+	Schule
+	Andere
+Website-Adresse
+	Privat
+	Arbeit
+	Andere
+Messanger-Konten
+
+Notiz
+Erignis
+Gruppen
+	Kollegen
+	Freunde
+	Familie
+
